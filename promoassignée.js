@@ -1,0 +1,2 @@
+$("#search").autocomplete({ source: ["CPI A1 2020-2021", "CPI A2 2020-2021", "A3 FISE BTP 2020-2021", "A3 FISE Généraliste 2020-2021", "A3 FISE Informatique 2020-2021", "A4 FISE BTP 2020-2021", "A4 FISE Informatique 2020-2021","A5 FISE Informatique 2020-2021","A5 FISE FISA Généraliste 2020-2021"] })
+$("#localité").autocomplete({source:["Aix-en-Provence","Angoulême","Brest","Bordeaux","Caen","Dijon","La Rochelle","Lille","Nantes","Nanterre","Nice","Toulouse","Saint-Nazaire"]})
