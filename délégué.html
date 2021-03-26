@@ -3,139 +3,155 @@
 
 <head>
     <style>
+.hele{
+    display: flex;
+    padding-top: 8px;
 
+}
     </style>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>HELP JOB</title>
-<link rel="stylesheet" type="text/css"
-    href="./bootstrap-4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
 
 </head>
 
 <body style="background-color: #aa948a;">
 
-    <nav class="navbar navbar-expand">
-        <a class="navbar-brand">
-            <img src="./logo.png" style="width: 70px; height: 70px; margin-bottom: 20px;">
-        </a>
+    <header class="hele">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="./logo.png" style="width: 70px; height: 70px; margin-bottom: 20px; margin-left: 10px;">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto" style="margin-left: 30%;">
+                        <li class="nav-item" style="width: 50px; height: 50px;" ;>
+                            <img src="./home.png" style="width: 30px; height: 30px;">
+                        </li>
 
-        <ul class="navbar-nav" style="margin-left: 33%;">
-            <li class="nav-item" style="width: 50px; height: 50px;" ;>
-                <img src="./home.png" style="width: 30px; height: 30px;">
-            </li>
-            <li class="nav-item" style="margin-left: 100px;">
-                <img src="./message.png" style="width: 30px; height: 30px;">
-            </li>
-            <li class="nav-item" style="margin-left: 100px;">
-                <img src="./notifications.png" style="width: 30px; height: 30px;">
-            </li>
-            <li class="nav-item">
-                <img src="./profil.png" style="width: 64px; height: 64px; margin-left: 425px;">
-                <label for="profilEtudiant" style="margin-left: 430px;">Délégué</label>
-            </li>
-        </ul>
-    </nav>
-    <div style="background-color:#757171; width: 100%; height: 46px;">
-        <div class="navbar navbar-expand-md  navbar-dark sticky-top fixed-top">
-
-            <ul class="navbar-nav">
-                <div style="margin-left: 50px;">
-                    <li class="nav-item dropdown"
-                        style="background-color: #6d5c55; height: 27px; width: 120px; padding:0px 2px 2px; margin:10px 0px 2px;">
-                        <a class="nav-link dropdown-toggle" style="color: rgb(248, 242, 242);" data-toggle="dropdown"
-                            href="#">Entreprises</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Créer une Entreprise</a>
-                            <a class="dropdown-item" href="#"> Modifier une Enterprise</a>
-                            <a class="dropdown-item" href="#">Evaluer une Enterprise</a>
-                            <a class="dropdown-item" href="#">Supprimer une Enterprise</a>
-                            <a class="dropdown-item" href="#">Rechercher une Enterprise</a>
-                            <a class="dropdown-item" href="#">Consulter les stats des Enterprises</a>
-                        </div>
-                    </li>
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <img src="./message.png" style="width: 30px; height: 30px;">
+                        </li>
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <img src="./notifications.png" style="width: 30px; height: 30px;">
+                        </li>
+                        <li class="nav-item">
+                            <img src="./profil.png" style="width: 64px; height: 64px; margin-left: 425px;">
+                            <label for="profilEtudiant" style="margin-left: 405px;">Administrateur</label>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+        </nav>
+    </header>
+    <div class="hele" style="background-color:#58433d; width: 100%; height: 56px;">
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Entreprises
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Créer une Entreprise</a></li>
+                <li><a class="dropdown-item" href="#">Modifier une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Evaluer une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Rechercher une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Consulter les stats des Enterprises</a></li>
             </ul>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Offres de Stage
+            </button>
 
-            <ul class="navbar-nav" style="padding-left: 100px">
-                <li class="nav-item dropdown"
-                    style="background-color: #6d5c55; height: 27px; width: 150px; padding: 0px 2px 2px; margin:10px 0px 2px;">
-                    <a class="nav-link dropdown-toggle" style="color: rgb(248, 241, 241);" data-toggle="dropdown"
-                        href="#">Offres de stage</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Rechercher une offre
-                        </a>
-                        <a class="dropdown-item" href="#">créer une offre</a>
-                        <a class="dropdown-item" href="#">Modifier une offre</a>
-                        <a class="dropdown-item" href="#">Supprimer une offre</a>
-                        <a class="dropdown-item" href="#">Consulter les stats des offres</a>
-
-                    </div>
-                </li>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rechercher une offre</a></li>
+                <li><a class="dropdown-item" href="#">créer une offre</a></li>
+                <li><a class="dropdown-item" href="#">Modifier une offre</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer une offre</a></li>
+                <li><a class="dropdown-item" href="#">Consulter les stats des offres</a></li>
             </ul>
-            <ul class="navbar-nav" style="padding-left: 100px;">
-                <li class="nav-item dropdown"
-                    style="background-color: #6d5c55; height: 27px; width: 90px; padding: 0px 2px 2px; margin: 10px 0px 2px">
-                    <a class="nav-link dropdown-toggle" style="color: rgb(248, 245, 245);" data-toggle="dropdown"
-                        href="#">Pilotes</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Rechercher un compte pilote</a>
-                        <a class="dropdown-item" href="Créerpilote.html">Créer un compte  pilote </a>
-                        <a class="dropdown-item" href="Créerpilote.html">Modifier un compte  pilote/a>
-                        <a class="dropdown-item" href="Créerpilote.html">Spprimer un compte  pilote</a>
-              
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Pilotes
+            </button>
 
-                    </div>
-                </li>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rechercher un compte pilote</a></li>
+                <li><a class="dropdown-item" href="#">Créer un compte pilote </a></li>
+                <li><a class="dropdown-item" href="#">Modifier un compte pilote</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer un compte pilote/a></li>
+
             </ul>
-            <ul class="navbar-nav" style="padding-left: 100px">
-                <li class="nav-item dropdown"
-                    style="background-color: #6d5c55; height: 27px; width: 140px; padding: 0px 2px 2px; margin:10px 0px 2px;">
-                    <a class="nav-link dropdown-toggle" style="color: rgb(248, 241, 241);" data-toggle="dropdown"
-                        href="#">Candidatures</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Avancement Candidature step3</a>
-                        <a class="dropdown-item" href="#">Avancement Candidature step4</a>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Candidatures
+            </button>
 
-                    </div>
-                </li>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ajouter une offre à la wish-list</a></li>
+                <li><a class="dropdown-item" href="#">Retirer une offre à la wish-list</a></li>
+                <li><a class="dropdown-item" href="#">Postuler à une offre</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step1</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step2</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step3</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step4</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step4</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step5</a></li>
             </ul>
-            <ul class="navbar-nav" style="padding-left: 100px">
-                <li class="nav-item dropdown"
-                    style="background-color: #6d5c55; height: 27px; width: 100px; padding: 0px 2px 2px; margin:10px 0px 2px;">
-                    <a class="nav-link dropdown-toggle" style="color: rgb(248, 241, 241);" data-toggle="dropdown"
-                        href="#">Délégués</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Rechercher un compte délégué
-                        </a>
-                        <a class="dropdown-item" href="CréerDélégué.html">Créer un compte délégué</a>
-                        <a class="dropdown-item" href="CréerDélégué.html">Supprimer un compte délégué</a>
-                        <a class="dropdown-item" href="CréerDélégué.html">Modifier un compte délégué</a>
-  
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Pilotes
+            </button>
 
-                    </div>
-                </li>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rechercher un compte délégué</a></li>
+                <li><a class="dropdown-item" href="#">Créer un compte délégué </a></li>
+                <li><a class="dropdown-item" href="#">Modifier un compte délégué</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer un compte délégué</a></li>
+                <li><a class="dropdown-item" href="#">Assigner des droits à un délégué</a></li>
+
             </ul>
-            <ul class="navbar-nav" style="padding-left: 100px">
-                <li class="nav-item dropdown"
-                    style="background-color: #6d5c55; height: 27px; width: 100px; padding: 0px 2px 2px; margin:10px 0px 2px;">
-                    <a class="nav-link dropdown-toggle" style="color: rgb(248, 241, 241);" data-toggle="dropdown"
-                        href="#">Etudiants</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Rechercher un compte étudiant
-                        </a>
-                        <a class="dropdown-item" href="Créerétudiant.html">Créer un compte étudiant</a>
-                        <a class="dropdown-item" href="Créerétudiant.html">Modifier un compte étudiant</a>
-                        <a class="dropdown-item" href="Créerétudiant.html">Supprimer un compte étudiant</a>
-                        <a class="dropdown-item" href="Créerétudiant.html">Consulter les stats des étudiants</a>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Etudiants
+            </button>
 
-                    </div>
-                </li>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rechercher un compte étudiant</a></li>
+                <li><a class="dropdown-item" href="#">Créer un compte étudiant</a></li>
+                <li><a class="dropdown-item" href="#">Modifier un compte étudiant</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer un compte étudiant</a></li>
+                <li><a class="dropdown-item" href="#">Consulter les stats des étudiants</a></li>
+
             </ul>
-
-
+            </a>
+            </button>
         </div>
 
     </div>
@@ -175,11 +191,11 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script
-        src="./bootstrap-4/js/bootstrap.bundle.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
 </body>
 
