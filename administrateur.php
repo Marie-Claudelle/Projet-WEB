@@ -1,0 +1,227 @@
+<?php
+
+try{
+
+$pdo=new PDO("mysql:host=localhost;dbname=web","root","");
+
+}
+
+catch(PDOException $e){
+
+echo $e->getMessage();
+die;
+}
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .hele {
+            display: flex;
+            padding-left: 10px;
+            padding-top: 8px;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HELP JOB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/fontawesome-free-5.15.1-web/css/all.min.css">
+
+</head>
+
+<body style="background-color: #b49388;">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="./logo.png" style="width: 70px; height: 70px; margin-bottom: 20px; margin-left: 10px;">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 30%;">
+                        <li class="nav-item" style="width: 50px; height: 50px;" ;>
+                            <img src="./home.png" style="width: 30px; height: 30px;">
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <img src="./message.png" style="width: 30px; height: 30px;">
+                        </li>
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <img src="./notifications.png" style="width: 30px; height: 30px;">
+                        </li>
+                        <li class="nav-item">
+                            <img src="./profil.png" style="width: 64px; height: 64px; margin-left: 425px;">
+                            <label for="profilEtudiant" style="margin-left: 405px;">Administrateur</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="hele" style="background-color:#58433d; width: 100%; height: 56px;">
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Entreprises
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Créer une Entreprise</a></li>
+                <li><a class="dropdown-item" href="#">Modifier une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Evaluer une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Rechercher une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Consulter les stats des Enterprises</a></li>
+            </ul>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Offres de Stage
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rechercher une offre</a></li>
+                <li><a class="dropdown-item" href="#">créer une offre</a></li>
+                <li><a class="dropdown-item" href="#">Modifier une offre</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer une offre</a></li>
+                <li><a class="dropdown-item" href="#">Consulter les stats des offres</a></li>
+            </ul>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Pilotes
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rechercher un compte pilote</a></li>
+                <li><a class="dropdown-item" href="#">Créer un compte pilote </a></li>
+                <li><a class="dropdown-item" href="#">Modifier un compte pilote</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer un compte pilote/a></li>
+
+            </ul>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Candidatures
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ajouter une offre à la wish-list</a></li>
+                <li><a class="dropdown-item" href="#">Retirer une offre à la wish-list</a></li>
+                <li><a class="dropdown-item" href="#">Postuler à une offre</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step1</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step2</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step3</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step4</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step4</a></li>
+                <li><a class="dropdown-item" href="#">Avancement Candidature step5</a></li>
+            </ul>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Pilotes
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rechercher un compte délégué</a></li>
+                <li><a class="dropdown-item" href="#">Créer un compte délégué </a></li>
+                <li><a class="dropdown-item" href="#">Modifier un compte délégué</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer un compte délégué</a></li>
+                <li><a class="dropdown-item" href="#">Assigner des droits à un délégué</a></li>
+
+            </ul>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Etudiants
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rechercher un compte étudiant</a></li>
+                <li><a class="dropdown-item" href="#">Créer un compte étudiant</a></li>
+                <li><a class="dropdown-item" href="#">Modifier un compte étudiant</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer un compte étudiant</a></li>
+                <li><a class="dropdown-item" href="#">Consulter les stats des étudiants</a></li>
+
+            </ul>
+            </a>
+            </button>
+        </div>
+
+    </div>
+
+   
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel"
+        style="margin:auto; margin-top:8%; ;width: 90%; height: 900px;">
+        <div class="carousel-inner">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./job.jfif" class="d-block w-100" alt="...">
+                        <div class="carousel-caption"
+                            style="color: rgb(49, 46, 46); margin-bottom: 27%; font-family: 'Times New Roman', Times, serif;">
+                            <p class="text-center" style="font-size:64px;">BONJOUR!!!!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./MEN.png" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image5.png.png" class="d-block w-100" alt="...">
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </div>
+    </div>
+
+</body>
+
+</html>

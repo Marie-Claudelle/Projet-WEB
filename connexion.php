@@ -1,4 +1,18 @@
-<!DOCTYPE>
+<?php
+
+try{
+
+$pdo=new PDO("mysql:host=localhost;dbname=web","root","");
+
+}
+
+catch(PDOException $e){
+
+echo $e->getMessage();
+die;
+}
+?>
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -34,7 +48,7 @@ input[type=submit] {
  padding:20px 20px 200px 50px;
  margin: auto;
  margin-top: 10%;
- height: 50%;
+ height: 290px;
  border:2px solid ;
  background-color: white;
 width: 25%;

@@ -1,0 +1,175 @@
+<?php
+
+try{
+
+$pdo=new PDO("mysql:host=localhost;dbname=web","root","");
+
+}
+
+catch(PDOException $e){
+
+echo $e->getMessage();
+die;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+.hele{
+    display: flex;
+    padding-top: 8px;
+
+}
+.bla{
+    display: flex;
+}
+    </style>
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HELP JOB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+
+<body style="background-color: #dfbeb3;">
+
+    <header class="hele">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="./logo.png" style="width: 70px; height: 70px; margin-bottom: 20px; margin-left: 10px;">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto" style="margin-left: 30%;">
+                        <li class="nav-item" style="width: 50px; height: 50px;" ;>
+                            <img src="./home.png" style="width: 30px; height: 30px;">
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <img src="./message.png" style="width: 30px; height: 30px;">
+                        </li>
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <img src="./notifications.png" style="width: 30px; height: 30px;">
+                        </li>
+                        <li class="nav-item">
+                            <img src="./profil.png" style="width: 64px; height: 64px; margin-left: 425px;">
+                            <label for="profilEtudiant" style="margin-left: 405px;">Administrateur</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="hele" style="background-color:#58433d; width: 100%; height: 56px;">
+        <div class="dropdown" style="margin-left: 90px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Entreprises
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Créer une Entreprise</a></li>
+                <li><a class="dropdown-item" href="#">Modifier une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Evaluer une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Supprimer une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Rechercher une Enterprise</a></li>
+                <li><a class="dropdown-item" href="#">Consulter les stats des Enterprises</a></li>
+            </ul>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 370px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Wish-list
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ajouter une offre</a></li>
+                <li><a class="dropdown-item" href="#">Rechercher une offre</a></li>
+
+            </ul>
+            </a>
+            </button>
+        </div>
+        <div class="dropdown" style="margin-left: 400px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 20px; margin-top: 10px;">
+                Mes Candidature
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Avancement</a></li>
+                <li><a class="dropdown-item" href="#">Offres</a></li>
+                <li><a class="dropdown-item" href="#">consulter les stats des offres</a></li>
+
+            </ul>
+            </a>
+            </button>
+        </div>
+
+    </div>
+    <div>
+        <img src="./OIP (1).jfif" style="width: 400px; height: 300px; margin: 60px 40px;">
+        <img src="./I-found-a-job.jpg" style="width: 380px; height: 260px; margin: 6Opx 40x;">
+        <img src="./image.jfif" alt="" style="width: 400px;height: 300px; margin: 60px 40px;">
+    </div>
+    <div style="background-color:#b9968a; width: 100%; height: 49px;">
+        <h1 style="text-align: center;"> Rechercher une offre</h1>
+    </div>
+    <div class="row g-3" style="margin-left: 19%; margin-top: 7%;">
+        <div class="col-4">
+            <input type="text" class="form-control" value="Domaine"
+                style="border-radius: 77px; color: rgb(119, 114, 114);">
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control" value="Localité (ex: Nantes, Essone...)"
+                style="border-radius: 77px; margin-left: 10%;color: rgb(119, 114, 114);">
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-outline-secondary" 
+
+                style="margin-left: 20%; border: none; background-color: #b9968a; margin-top: 1%; border-radius: 50px;">
+                
+                    Rechercher 
+            </button>
+        </div>
+    
+    </div>
+    <div class="bla">
+        <div style="margin-top: 8%; margin-left: 40%;">
+            <button type="button" class="rounded-circle"
+                style="border: solid; background-color: #e91e63; width: 20px; height: 20px;"></button>
+        </div>
+        <div style="margin-top: 8%; margin-left: 50px;">
+            <button type="button" class="rounded-circle"
+                style="border: solid; background-color: white; width: 20px; height: 20px;"></button>
+        </div>
+        <div style="margin-top: 8%; margin-left: 50px;">
+            <button type="button" class="rounded-circle"
+                style="border: solid; background-color: #e91e63; width: 20px; height: 20px;"></button>
+        </div>
+        <div style="margin-top: 8%; margin-left: 50px;">
+            <button type="button" class="rounded-circle"
+                style="border: solid; background-color: white; width: 20px; height: 20px;"></button>
+        </div>
+    </div>
+
+
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</body>
+
+</html>
