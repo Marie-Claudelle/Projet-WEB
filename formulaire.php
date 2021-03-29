@@ -16,6 +16,20 @@ die;
 <!DOCTYPE html>
 <html>
     <head>
+<style>
+
+input[type=submit][type=reset] {
+ width:100px;
+ margin-left:5px;; 
+ box-shadow:1px 3px 1px #D83F3D;
+ cursor:pointer;
+ }
+input{
+
+	 margin-bottom:20%;
+}
+</style>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>HELP JOB</title>
@@ -84,9 +98,8 @@ die;
                             for="localité"><strong>Localité</strong></label><br />
                         <input type="localité" name="localité" id="localité1" style="height: 45px;" />
                     </div>
-                    <div class="let" style="display: inline-block;"><label for="nombrestagiaires"><strong>Nombre de
-                                stagiaires CESI acceptés en stage</strong></label><br />
-                        <input type="nombre" name="nombre" id="nombre1" style="height: 45px;" />
+                    <div style="display: inline-block;"><label for="stagiaire"><strong> Nombre de stagiaire au CESI</strong></label><br />
+                        <input type="text" name="stagiaire" id="stagiaire" style="height: 45px;" />
                     </div>
 
                 </div>
@@ -114,13 +127,12 @@ die;
                             for="localité"><strong>Localité</strong></label><br />
                         <input type="localité" name="localité" id="localité" style="height: 45px;" />
                     </div>
-                    <div class="let" style="display: inline-block;"><label for="nombrestagiaires"><strong>Nombre de
-                                stagiaires CESI acceptés en stage</strong></label><br />
-                        <input type="nombre" name="nombre" id="nombre" style="height: 45px;" />
+                   <div style="display: inline-block;"><label for="stagiaire"><strong> Nombre de stagiaire au CESI</strong></label><br />
+                        <input type="text" name="stagiaire" id="stagiaire" style="height: 45px;" />
                     </div>
 
                 </div>
-                <div><input type="submit" value="Supprimer" style="margin-left: 700px;" /></div>
+                <div><input type="submit" value="Supprimer" style="margin-left: 700px;margin-top:8%"/></div>
 
             </form>
         </div>
