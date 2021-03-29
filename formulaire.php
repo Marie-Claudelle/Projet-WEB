@@ -56,9 +56,8 @@ die;
                             for="localité"><strong>Localité</strong></label><br />
                         <input type="localité" name="localité" id="localité" style="height: 45px;" />
                     </div>
-                    <div class="let" style="display: inline-block;margin-left:50%;"><label for="nombre1"><strong>Nombre de stagiaires
-                                CESI acceptés en stage</strong></label><br />
-                        <input type="nombre" name="nombre" id="nombre1" style="height: 45px; margin-left:90%;" />
+                      <div style="display: inline-block;"><label for="stagiaire"><strong> Nombre de stagiaire au CESI</strong></label><br />
+                        <input type="text" name="stagiaire" id="stagiaire" style="height: 45px;" />
                     </div>
 
                 </div>
