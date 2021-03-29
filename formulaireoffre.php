@@ -62,10 +62,11 @@ die;
             <li><a href="#tabs-1">Créer</a></li>
             <li><a href="#tabs-2">Modifier</a></li>
             <li><a href="#tabs-3">Supprimer</a></li>
+            <li><a href="#tabs-4">Rechercher</a></li>
         </ul>
         <div id="tabs-1">
             <!--creer-->
-            <form action="">
+            <form action="formulaire.php">
                 <div class="flex-container">
                     <div class="binta">
                         <label for="competences"><strong>Compétences</strong></label></br>
@@ -204,6 +205,53 @@ die;
                 <div><input type="submit" value="Supprimer" style="margin-left: 665px;margin-top: 35px;" /></div>
 
             </form>
+        </div>
+        <div id="tabs-4">
+            <!--creer-->
+            <form action="formulaire.php">
+                <div class="flex-container">
+                    <div class="binta">
+                        <label for="competences"><strong>Compétences</strong></label></br>
+                        <input type="text" name="Compétences" id="competences" style="height: 45px;" /></br>
+
+
+                        <label for="localite"><strong>Lieu du stage</strong></label></br>
+                        <input type="text" name="localité" id="localite" style="height: 45px;" /></br>
+
+
+                        <label for="nom"><strong>Nom de l'entreprise</strong></label></br>
+                        <input type="nom" name="nom" id="nom" style="height: 45px;" /></br>
+
+                        <label for="nombre2"><strong>Nombre de places
+                            </strong></label></br>
+                        <input type="nombre" name="nombre2" id="nombre2" style="height: 45px;" /></br>
+
+                    </div>
+
+                    <div class="clau">
+                        <label for="promo"><strong>
+                                Promotions concernées</strong></label></br>
+                        <input type="text" name="promo" id="promo" style="height: 45px;" /></br>
+
+                        <label for="nombre2"><strong>Durée du
+                                stage</strong></label></br>
+                        <input type="nombre" name="nombre2" id="nombre2" style="height: 45px;" /></br>
+
+                        <label for="nombre2"><strong>Base de
+                                rénumération</strong></label></br>
+                        <input type="nombre" name="nombre2" id="nombre2" style="height: 45px;" /></br>
+
+                        <label for="offre"><strong>Date de
+                                l'offre</strong></label></br>
+                        <input type="date" name="offre" id="offre" style="height: 45px;" /></br>
+
+                    </div>
+
+                </div>
+
+                <div><input type="submit" value="Rechercher" style="margin-left: 665px;margin-top: 35px;" /></div>
+            </form>
+
         </div>
 
     </div>

@@ -50,10 +50,11 @@ input{
             <li><a href="#tabs-1">Créer</a></li>
             <li><a href="#tabs-2">Modifier</a></li>
             <li><a href="#tabs-3">Supprimer</a></li>
+            <li><a href="#tabs-4">Rechercher</a></li>
         </ul>
         <div id="tabs-1">
             <!--creer-->
-            <form action="">
+            <form action="formulaire.php">
                 <div style="margin: auto;width: 60%; margin-left: 30%;">
 
                     <div style="display: inline-block; padding-right: 20%; padding-top: 10%;"><label
@@ -81,7 +82,7 @@ input{
         </div>
         <div id="tabs-2">
             <!--modifier-->
-            <form action="">
+            <form action="formulaire.php">
                 <div style="margin: auto;width: 60%; margin-left: 30%;">
 
                     <div style="display: inline-block; padding-right: 20%; padding-top: 10%;"><label
@@ -110,7 +111,7 @@ input{
         </div>
         <div id="tabs-3">
             <!--suprimerr-->
-            <form action="">
+            <form action="formulaire.php">
                 <div style="margin: auto;width: 60%; margin-left: 30%;">
 
                     <div style="display: inline-block; padding-right: 20%; padding-top: 10%;"><label
@@ -136,6 +137,32 @@ input{
 
             </form>
         </div>
+        <div id="tabs-4">
+            <!--creer-->
+            <form action="formulaire.php">
+                <div style="margin: auto;width: 60%; margin-left: 30%;">
+
+                    <div style="display: inline-block; padding-right: 20%; padding-top: 10%;"><label
+                            for="nom"><strong>Nom de l'entreprise</strong></label><br />
+                        <input type="text" name="nom" id="nom" style="height: 45px;" />
+                    </div>
+
+                    <div style="display: inline-block;"><label for="domaine"><strong>Secteur
+                                d'activité</strong></label><br />
+                        <input type="text" name="domaine" id="domaine" style="height: 45px;" />
+                    </div>
+
+                    <div class="let" style="display: inline-block;padding-right:20%;padding-top: 10%;"><label
+                            for="localité"><strong>Localité</strong></label><br />
+                        <input type="localité" name="localité" id="localité" style="height: 45px;" />
+                    </div>
+                      <div style="display: inline-block;"><label for="stagiaire"><strong> Nombre de stagiaire au CESI</strong></label><br />
+                        <input type="text" name="stagiaire" id="stagiaire" style="height: 45px;" />
+                    </div>
+
+                </div>
+                <div><input type="submit" value="Rechercher" style="margin-left: 700px;" /></div>
+            </form>
 
     </div>
     <!--script-->
