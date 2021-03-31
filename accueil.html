@@ -1,17 +1,4 @@
-<?php
 
-try{
-
-$pdo=new PDO("mysql:host=localhost;dbname=web","root","");
-
-}
-
-catch(PDOException $e){
-
-echo $e->getMessage();
-die;
-}
-?>
 
 <!DOCTYPE php>
 <php>
@@ -77,10 +64,10 @@ die;
                         </button>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="connexion.php">Administrateur</a></li>
-                            <li><a class="dropdown-item" href="connexion.php">Etudiant</a></li>
-                            <li><a class="dropdown-item" href="connexion.php">Délégué</a></li>
-                            <li><a class="dropdown-item" href="connexion.php">Pilote</a></li>
+                            <li><a class="dropdown-item" href="login.php">Administrateur</a></li>
+                            <li><a class="dropdown-item" href="login.php">Etudiant</a></li>
+                            <li><a class="dropdown-item" href="login.php">Délégué</a></li>
+                            <li><a class="dropdown-item" href="login.php">Pilote</a></li>
                         </ul>
                         </a>
                         </button>

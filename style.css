@@ -21,16 +21,16 @@ input[type=submit] {
     color:black;
     font-weight:bold
     }
-    
     .connexion fieldset {
-    padding:20px 20px 200px 50px;
-    margin: auto;
-    margin-top: 10%;
-    height: 290px;
-    border:2px solid ;
-    background-color: white;
-   width: 25%;
-    }
+      padding:20px 20px 200px 50px;
+      margin: auto;
+      margin-top: 10%;
+      height: 290px;
+      border:2px solid ;
+      background-color: white;
+     width: 25%;
+      }
+   
  
     .password + .unmask {
         position:absolute;
