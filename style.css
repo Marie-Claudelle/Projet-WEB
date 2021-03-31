@@ -1,37 +1,33 @@
 body{
- background-image: url("image8.png");
- font-family:"trebuchet ms",sans-serif;
- font-size:90%;
- padding:none;
- background-color:none;
-}
+    background-image: url("image8.png");
+    font-family:"trebuchet ms",sans-serif;
+    font-size:90%;
+    padding:none;
+    background-color:none;
+    }
+#container fieldset {
+ padding:20px 20px 200px 50px;
+ margin: auto;
+ margin-top: 10%;
+ height: 290px;
+ border:2px solid ;
+ background-color: white;
+width: 25%;
+ }
+ legend {
+    color:black;
+    font-weight:bold
+    }
+    input{
 
-.claude{
-	background-color: white;
-            width: 100%;
-            height: 45px;
-}
-input[type=submit] {
+        margin-bottom:20%;
+   }
+   input[type=submit] {
     width:100px;
     margin-left:5px;; 
     box-shadow:1px 3px 1px #D83F3D;
     cursor:pointer;
     }
-    legend {
-    color:black;
-    font-weight:bold
-    }
-    .connexion fieldset {
-      padding:20px 20px 200px 50px;
-      margin: auto;
-      margin-top: 10%;
-      height: 290px;
-      border:2px solid ;
-      background-color: white;
-     width: 25%;
-      }
-   
- 
     .password + .unmask {
         position:absolute;
         right: 68px; top: 7px;
@@ -61,4 +57,20 @@ input[type=submit] {
         background: #aaa;
         border-radius: 50%;
       }
+/* Bordered form */
 
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+
+
+/* Set a style for all buttons */
+
+input[type=submit]:hover {
+    background-color: rgb(248, 245, 245);
+   
+}
