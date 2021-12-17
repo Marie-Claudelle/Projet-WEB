@@ -1,7 +1,7 @@
 <html>
     <head>
        <meta charset="utf-8">
-        <!-- importer le fichier de style -->
+        <!-- importer le fichier de style + CDN Bootstrap -->
         <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
         <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
