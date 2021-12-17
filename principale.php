@@ -6,7 +6,7 @@
     </head>
     <body style='background:#fff;'>
         <div id="content">
-            <!-- tester si l'utilisateur est connecté -->
+            <!-- test pour voir si l'utilisateur est connecté -->
             <?php
                 session_start();
                 if($_SESSION['username'] !== ""){
